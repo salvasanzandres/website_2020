@@ -1,0 +1,78 @@
+@import './../../var.scss';
+.exp-wrapper {
+    padding: 0 10vh 10vh 10vh;
+    position: relative;
+    .date {
+        position: absolute;
+        font-size: 4vw;
+        color: $title-over-dark;
+        line-height: 0;
+        opacity: .5;
+        text-shadow: 5px 0 0 rgba(0, 0, 0, .37);
+        pointer-events: none;
+    }
+    .title {
+        cursor: pointer;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        color: $title-over-dark;
+        font-size: 2vw;
+        background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, rgba(170,188,221,0.5));
+        background-position: -0% 0;
+        background-size: 200% auto;
+        transition: background-position 0.5s ease-out;
+        .plus::before {
+            content: '+'; // here is your X(cross) sign.
+            color: $title-over-dark;
+            font-weight: 300;
+            font-size: 5vw;
+            line-height: 3vw;
+            text-shadow: 5px 0 0 rgba(84, 84, 84, 0.77);
+        }
+        .less::before {
+            content: '-'; // here is your X(cross) sign.
+            color: $title-over-dark;
+            font-weight: 300;
+            font-size: 5vw;
+            line-height: 3vw;
+            text-shadow: 5px 0 0 rgba(84, 84, 84, 0.77);
+        }
+    }
+    .title:hover {
+        background-position: -99.99% 0;
+    }
+    .descriptif {
+        color: $text-over-dark;
+        font-size: 1.5vw;
+    }
+    .tasks, .tech-env {
+        font-size: 1.5vw;
+        color: $text-over-dark;
+        padding: 10px 0px;
+    }
+}
+@media(max-width: 800px) {
+    .exp-wrapper {
+        padding: 5vh 2vh 0vh 2vh;
+        .date {
+            font-size: 8vw;
+        }
+        .title {
+            font-size: 4vw;
+            .less::before , .plus::before {
+                font-size: 8vw;
+                line-height: 5vw;
+            }
+        }
+        .descriptif, .tasks, .tech-env {
+            font-size: 3.2vw;
+        }
+
+    }
+}
+
+
+ul {
+    padding: 0 20px;
+}

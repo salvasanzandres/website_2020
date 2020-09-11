@@ -1,0 +1,82 @@
+.main-section {
+    min-width: 100vw;
+    min-height: 110vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    .header {
+        padding: 20px;
+        font-size: 1.5vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        .logo-container {
+            display: flex;
+            app-menu-button {
+                z-index: 5;
+                display: none;
+            }
+        }
+    }
+    .description {
+        z-index: 4;
+        padding: 50px 20px 0px 20px;
+        p {
+            font-family: 'Work Sans', sans-serif;
+            font-size: 4vw;
+        }
+        @media(max-width: 800px) {
+            p {
+                font-size: 7vw;
+            }
+        }
+        h2 {
+            padding: 20px 0;
+        }
+    }
+    .scroll-container {
+        padding-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        z-index: 3;
+        .button::before {
+            content: '»'; // here is your X(cross) sign.
+            color: #fff;
+            font-weight: 300;
+            font-size: 10vw;
+        }
+        .button {
+            transform: rotate(90deg);
+            padding: 20px 0 40px 0;
+        }
+        @media(max-width: 800px) {
+            .button::before {
+                font-size: 20vw;
+            }
+            .button {
+                padding-right: 30vh;
+            }
+        }
+    }
+}
+
+@media(max-width: 800px) {
+    .main-section {
+        min-height: 100vh;
+        .header app-links {
+            display: none;
+        }
+        .header .logo-container {
+            app-menu-button {
+                display: block;
+            }
+        }
+        .description {
+            padding: 30px 20px 0px 20px;
+        }
+        .scroll-container {
+            padding: 15px 0;
+        }
+    }
+}
+

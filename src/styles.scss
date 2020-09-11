@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&family=Work+Sans:wght@900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-size: 62.5%;
+    background-color: #110000;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.section-title {
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    font-size: 12vw;
+}
+
+p {
+    font-size: 1.8vw;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                     supported by Chrome, Edge, Opera and Firefox */
+}
+
+a {
+    text-decoration: none
+}
+

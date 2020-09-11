@@ -1,0 +1,17 @@
+:host {
+    z-index: 5;
+    font-family: 'Roboto Mono', monospace;
+    cursor: pointer;
+    display: flex;
+    a {
+        color: white;
+        cursor: pointer;
+    }
+    img {
+
+        height: 4vh;
+        padding: 10px 20px;
+        filter: invert(100%) sepia(35%) saturate(70%) hue-rotate(80deg) brightness(95%) contrast(90%);
+    }
+}
+

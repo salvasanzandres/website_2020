@@ -1,0 +1,152 @@
+@import './../var.scss';
+.wrapper {
+    min-height: 140vh;
+    position: relative;
+    .layer-abs {
+        position: absolute;
+        margin-top: 15vh;
+        .frame {
+            width: 30vw;
+            height: 70vh;
+            background: $cards-color;
+            border-radius: 12px;
+            margin-left: 10vw;
+        }
+        .img {
+            margin-top: 10vh;
+            width: 25vw;
+            margin-left: 15vw;
+            filter: invert(4%) sepia(35%) saturate(70%) hue-rotate(80deg) brightness(95%) contrast(90%);
+        }
+        .pin {
+            width: 20vw;
+            margin-top: 15vh;
+            opacity: .8;
+            filter:invert(29%) sepia(29%) saturate(7507%) hue-rotate(172deg) brightness(87%) contrast(80%);
+        }
+        .img-text {
+            width: 50vw;
+            margin-top: 25vh;
+            margin-left: 5vw;
+            font-weight: 900;
+            letter-spacing: -0.07em;
+            font-size: 3.5vw;
+            color: $cards-big-text;
+            opacity: .9;
+            text-shadow: 5px 0 0 rgba(84, 84, 84, 0.37);
+            pointer-events: none;
+        }
+        .logo-angular {
+            margin-top: 60vh;
+            width: 15vw;
+            margin-left: 48vw;
+            opacity: .8;
+            filter: invert(8%) sepia(50%) saturate(107%) hue-rotate(267deg) brightness(95%) contrast(58%)
+        }
+        .logo-js {
+            margin-top: 20vh;
+            width: 15vw;
+            margin-left: 70vw;
+            filter: invert(1%) sepia(27%) saturate(200) hue-rotate(500deg) brightness(95%) contrast(34%)
+        }
+        .logo-html{
+            width: 10vw;
+            margin-left: 80vw;
+            filter: invert(4%) sepia(35%) saturate(70%) hue-rotate(180deg) brightness(95%) contrast(90%);
+        }
+        .logo-web{
+            margin-top: 100vh;
+            width: 5vw;
+            margin-left: 70vw;
+            filter: invert(4%) sepia(35%) saturate(70%) hue-rotate(180deg) brightness(95%) contrast(90%);
+        }
+    }
+    .layer-abs-left {
+        margin-top: 60vh;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        .frame {
+            padding: 20px;
+            width: 35vw;
+            background: $cards-color;
+            border-radius: 12px;
+            margin-right: 5vw;
+            font-size: 1.5vw;
+            color: $text-over-dark;
+        }
+    }
+    @media(max-width: 800px) {
+        .layer-abs-left {
+            margin-top: 80vh;
+            .frame {
+                font-size: 4vw;
+                width: 70vw;
+                h1 {
+                    text-shadow: 3px 0 0 rgba(84, 84, 84, 0.8);
+                }
+            }
+        }
+
+        .layer-abs {
+            margin-top: 5vh;
+            .frame {
+                height:50vh;
+                width: 70vw;
+            }
+            .img {
+                width: 60vw;
+            }
+            .pin {
+                width: 40vw;
+            }
+            .img-text {
+                font-size: 5vw;
+                width: 80vw;
+                margin-top: 20vh;
+                text-shadow: 2px 0 0 rgba(84, 84, 84, 0.37);
+            }
+            .logo-angular {
+                margin-top: 120vh;
+                width: 30vw;
+                margin-left: 0vw;
+            }
+            .logo-js {
+                margin-top: 75vh;
+            }
+            .logo-html{
+                width: 20vw;
+            }
+            .logo-web{
+                margin-top: 135vh;
+            }
+        }
+    }
+    .no-element-for-scroll {
+        position: absolute;
+        margin-top: -10vh;
+    }
+}
+
+
+.content {
+    font-size: 4vw;
+}
+
+
+h1 {
+    color: $cards-big-text;
+    opacity: .9;
+    text-shadow: 5px 0 0 rgba(156, 156, 156, 0.37);
+    pointer-events: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+@media(max-width: 800px) {
+    .wrapper {
+        min-height: 160vh;
+    }
+}
